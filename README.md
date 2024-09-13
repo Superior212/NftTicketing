@@ -78,13 +78,13 @@ This contract is responsible for minting the ERC721 NFT used as tickets for the 
    Deploy the `NFT.sol` contract:
 
    ```bash
-   npx hardhat run scripts/deploy-nft.js --network <network-name>
+   npx hardhat ignition deploy ./ignition/modules/EventNft.ts --network <network-name>
    ```
 
    Deploy the `NftTicket.sol` contract:
 
    ```bash
-   npx hardhat run scripts/deploy-nft-ticket.js --network <network-name>
+   npx hardhat ignition deploy ./ignition/modules/NftTicketing.ts --network <network-name>
    ```
 
 5. Run tests:
